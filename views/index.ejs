@@ -1,0 +1,14 @@
+<%- include('header') %>
+    <main>
+
+        <div class="grid-row">
+            <% mydata.forEach((toy)=> { %>
+            <div class="grid-item">
+                <%= toy.title.slice(0, 30) %>
+                <a href=<%= toy.url %>><button>BUY</button></a>
+            </div>
+            <% }) %>
+        </div>
+    </main>
+
+    <%- include('footer')%>
